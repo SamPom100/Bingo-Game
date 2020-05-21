@@ -103,7 +103,8 @@ class bar extends JPanel {
         frame.setContentPane(it);
         frame.pack();
         frame.setVisible(true);
-        URL url = new URL("lisa.gif");
+        //////////////////// UPDATE LOCATION //////////////////////
+        URL url = new URL("file://localhost/Users"); //lisa gif
         Icon icon = new ImageIcon(url);
         JLabel label = new JLabel(icon);
         frame.getContentPane().add(label);
@@ -128,13 +129,15 @@ class bar extends JPanel {
     }
 }
 
+
+///////////// UPDATE LOCATION 2 ///////////////
 class display {
     public static void main(int in) throws MalformedURLException {
         String str = "";
         if (in == 0) {
-            str = ("load.gif");
+            str = ("file://localhost/Users"); //loading gif
         } else {
-            str = ("win.gif");
+            str = ("file://localhost/Users"); //winning gif
         }
         URL url = new URL(str);
         Icon icon = new ImageIcon(url);
